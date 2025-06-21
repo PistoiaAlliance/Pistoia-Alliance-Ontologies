@@ -20,11 +20,6 @@
 	<!ENTITY cmns-txt "https://www.omg.org/spec/Commons/TextDatatype/">
 	<!ENTITY dct "http://purl.org/dc/terms/">
 	<!ENTITY idmp-o "https://spec.pistoiaalliance.org/idmp/ontology/IdentificationOfMedicinalProductsOntology/">
-	<!ENTITY lcc-639-1 "https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes/">
-	<!ENTITY lcc-lr "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/">
-	<!ENTITY mvf "https://www.omg.org/spec/MVF/MultipleVocabularyFacility/">
-	<!ENTITY mvf-trm "https://www.omg.org/spec/MVF/ISO1087-VocabularyForTermsAndDefinitions/">
-	<!ENTITY mvf-tsc "https://www.omg.org/spec/MVF/ISO1087-TerminologyScience/">
 	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
 	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
@@ -52,11 +47,6 @@
 	xmlns:cmns-txt="https://www.omg.org/spec/Commons/TextDatatype/"
 	xmlns:dct="http://purl.org/dc/terms/"
 	xmlns:idmp-o="https://spec.pistoiaalliance.org/idmp/ontology/IdentificationOfMedicinalProductsOntology/"
-	xmlns:lcc-639-1="https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes/"
-	xmlns:lcc-lr="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/"
-	xmlns:mvf="https://www.omg.org/spec/MVF/MultipleVocabularyFacility/"
-	xmlns:mvf-trm="https://www.omg.org/spec/MVF/ISO1087-VocabularyForTermsAndDefinitions/"
-	xmlns:mvf-tsc="https://www.omg.org/spec/MVF/ISO1087-TerminologyScience/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -89,8 +79,8 @@
 		<dct:contributor>U.S. Food and Drug Administration (FDA)</dct:contributor>
 		<dct:created>2022-01-16</dct:created>
 		<dct:issued>2024-07-11</dct:issued>
-		<dct:license>Copyright (c) 2022-2024 EDM Council, Inc.
-Copyright (c) 2022-2024 Pistoia Alliance, Inc.
+		<dct:license>Copyright (c) 2022-2025 EDM Council, Inc.
+Copyright (c) 2022-2025 Pistoia Alliance, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -117,18 +107,13 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/RegulatoryAgencies/"/>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/RolesAndCompositions/"/>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/TextDatatype/"/>
-		<owl:imports rdf:resource="https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes/"/>
-		<owl:imports rdf:resource="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/"/>
-		<owl:imports rdf:resource="https://www.omg.org/spec/MVF/ISO1087-TerminologyScience/"/>
-		<owl:imports rdf:resource="https://www.omg.org/spec/MVF/ISO1087-VocabularyForTermsAndDefinitions/"/>
-		<owl:imports rdf:resource="https://www.omg.org/spec/MVF/MultipleVocabularyFacility/"/>
 		<owl:versionIRI rdf:resource="https://spec.pistoiaalliance.org/idmp/ontology/20240711/IdentificationOfMedicinalProductsOntology/"/>
 		<owl:versionInfo>1.2.0</owl:versionInfo>
 		<idmp-o:hasMaturityLevel rdf:resource="&idmp-o;Release"/>
 		<cmns-av:abbreviation>IDMP-O</cmns-av:abbreviation>
-		<cmns-av:copyright>Copyright (c) 2022-2024 EDM Council, Inc.</cmns-av:copyright>
-		<cmns-av:copyright>Copyright (c) 2022-2024 Pistoia Alliance, Inc.</cmns-av:copyright>
-		<cmns-av:explanatoryNote>Note that this ontology represents a merged version of the individual released ontologies developed over the course of the project. It also includes elements from the forthcoming OMG Commons Sites and Facilities ontology which we anticipate replacing once that ontology is publicly available.</cmns-av:explanatoryNote>
+		<cmns-av:copyright>Copyright (c) 2022-2025 EDM Council, Inc.</cmns-av:copyright>
+		<cmns-av:copyright>Copyright (c) 2022-2025 Pistoia Alliance, Inc.</cmns-av:copyright>
+		<cmns-av:explanatoryNote>Note that this ontology represents an abridged, merged version of the individual released ontologies developed over the course of the project, and does not fully support some constructs of the IDMP standards. It also includes elements from the forthcoming OMG Commons Sites and Facilities ontology which we anticipate replacing once that ontology is publicly available. Users may contact Pistoia Alliance, at https://www.pistoiaalliance.org/, for membership information and access to the complete ontology, including reference data, examples, and documentation.</cmns-av:explanatoryNote>
 	</owl:Ontology>
 	
 	<owl:Class rdf:about="&idmp-o;Acid">
@@ -1246,10 +1231,9 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary representing the enumeration for coding rationale as specified in ISO 21090</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO21090-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary representing the enumeration for coding rationale</cmns-dsg:hasDescription>
+		<cmns-dsg:hasTextualName>Coding Rationale Enumeration</cmns-dsg:hasTextualName>
 		<cmns-id:isIdentifiedBy rdf:resource="&idmp-o;OID-2.16.840.1.113883.5.1074"/>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>Coding Rationale Enumeration</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/CodingRationaleEnumeration</mvf:hasURI>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/CodingRationaleEnumeration</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:Class rdf:about="&idmp-o;ColorCharacteristic">
@@ -1491,10 +1475,9 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary representing the enumeration for compression algorithms as specified in ISO 21090</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO21090-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary representing the enumeration for compression algorithms as specified in ISO 21090</cmns-dsg:hasDescription>
+		<cmns-dsg:hasTextualName>Compression Algorithm Enumeration</cmns-dsg:hasTextualName>
 		<cmns-id:isIdentifiedBy rdf:resource="&idmp-o;OID-2.16.840.1.113883.5.1009"/>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>Compression Algorithm Enumeration</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/CompressionAlgorithmEnumeration</mvf:hasURI>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/CompressionAlgorithmEnumeration</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:Class rdf:about="&idmp-o;Concentration">
@@ -1939,7 +1922,6 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 	
 	<owl:Class rdf:about="&idmp-o;ControlledVocabulary">
 		<rdfs:subClassOf rdf:resource="&idmp-o;ValueDomain"/>
-		<rdfs:subClassOf rdf:resource="&mvf;Vocabulary"/>
 		<rdfs:label>controlled vocabulary</rdfs:label>
 		<skos:definition>finite set of values that represent the only allowed values for a data item</skos:definition>
 		<skos:note>The allowed values can be codes, text or numeric.</skos:note>
@@ -2898,9 +2880,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:note>An &apos;amount type&apos; may be associated with an amount to state if the value needs to be interpreted as an average or an exact or approximate quantity.</skos:note>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary specifying how the value associated with an amount should be interpreted</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Amount Type vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-AmountTypeVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Amount Type vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-AmountTypeVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-ClassificationScheme">
@@ -2920,9 +2901,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:directSource>ISO 11238:2018 Health informatics - Identification of medicinal products (IDMP) - Data elements and structures for the unique identification and exchange of regulated information on substances, clause 5.9</cmns-av:directSource>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for the conformance terminology and context as it relates to ISO 11238 and ISO/TS 19844</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Conformance Context</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ConformanceContext</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Conformance Context</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ConformanceContext</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-IsotopicSubstitutionVocabulary">
@@ -2935,9 +2915,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:adaptedFrom>ISO/TS 19844:2018(E) Health informatics - Identification of medicinal products (IDMP) - Implementation guidelines for ISO 11238 for data elements and structures for the unique identification and exchange of regulated information on substances, clause 6.7.7.3, table 62</cmns-av:adaptedFrom>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary specifying the nature of isotopic substitution by site of substitution</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Isotopic Substitution vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-IsotopicSubstitutionVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Isotopic Substitution vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-IsotopicSubstitutionVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-MixtureTypeVocabulary">
@@ -2950,9 +2929,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:directSource>ISO 11238:2018 Health informatics - Identification of medicinal products (IDMP) - Data elements and structures for the unique identification and exchange of regulated information on substances, clause 7.8 and Figure 24</cmns-av:directSource>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary specifying the nature of the mixture with respect to the constituents that it may have</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Mixture Type vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-MixtureTypeVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Mixture Type vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-MixtureTypeVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-ModificationMethodVocabulary">
@@ -2965,9 +2943,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary specifying the nature of the method of modification</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary specifying the nature of the method of modification</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Modification Method vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ModificationMethodVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Modification Method vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ModificationMethodVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-OfficialNameStatusVocabulary">
@@ -2980,9 +2957,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary specifying the nature of the method of modification</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for the status of an official name from a pre-defined ISO 19844 code set</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Official Name Status vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OfficialNameStatusVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Official Name Status vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OfficialNameStatusVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-OligoNucleotideTypeVocabulary">
@@ -2995,9 +2971,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:directSource>ISO 11238:2018 Health informatics - Identification of medicinal products (IDMP) - Data elements and structures for the unique identification and exchange of regulated information on substances, clause 7.5</cmns-av:directSource>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary used to distinguish a single stranded oligo nucleotide from a double stranded gene or rDNA vaccine</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Oligo Nucleotide Type vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OligoNucleotideTypeVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Oligo Nucleotide Type vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OligoNucleotideTypeVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-OpticalActivityVocabulary">
@@ -3010,9 +2985,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary the ability of a chemical substance to rotate the plane of vibration of polarized light to the right or left</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary indicating the ability of a chemical substance to rotate the plane of vibration of polarized light to the right or left</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Optical Activity vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OpticalActivityVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Optical Activity vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-OpticalActivityVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-ReferenceSourceClassVocabulary">
@@ -3025,9 +2999,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:adaptedFrom>ISO/TS 19844:2018(E) Health informatics - Identification of medicinal products (IDMP) - Implementation guidelines for ISO 11238 for data elements and structures for the unique identification and exchange of regulated information on substances, clause 6.4</cmns-av:adaptedFrom>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for a broad category for the source in which the data elements were found</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Reference Source Class vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ReferenceSourceClassVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Reference Source Class vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ReferenceSourceClassVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-ResidueModifiedVocabulary">
@@ -3040,9 +3013,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary for the residue of a modification</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for the residue of a modification</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Residue Modified vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ResidueModifiedVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Residue Modified vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-ResidueModifiedVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-StereochemistryVocabulary">
@@ -3055,9 +3027,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:directSource>ISO 11238:2018 Health informatics - Identification of medicinal products (IDMP) - Data elements and structures for the unique identification and exchange of regulated information on substances, clause 3.80, clause 7.2.2, clause 7.3, and Figure 14</cmns-av:directSource>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for the relative spatial arrangement of atoms in 3-dimensional space within molecules</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Stereochemistry vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-StereochemistryVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Stereochemistry vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-StereochemistryVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-StructuralRepresentationVocabulary">
@@ -3070,9 +3041,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary for representing the arrangement of atoms for describing chemical structures</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for representing the arrangement of atoms for describing chemical structures</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Structural Representation vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-StructuralRepresentationVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Structural Representation vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-StructuralRepresentationVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO11238-SubstanceNameClassifierVocabulary">
@@ -3085,9 +3055,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary for the description of the nature of the substance name from a pre-defined ISO 19844 code set</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO19844-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary for the description of the nature of the substance name from a pre-defined ISO 19844 code set</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11238 Substance Name Classifier vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-SubstanceNameClassifierVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11238 Substance Name Classifier vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/ISO11238-SubstanceNameClassifierVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:Class rdf:about="&idmp-o;ISO11240LexiconCodeEntry">
@@ -3102,7 +3071,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&idmp-o;hasLanguageCode"/>
-				<owl:someValuesFrom rdf:resource="&lcc-lr;LanguageIdentifier"/>
+				<owl:someValuesFrom rdf:resource="&cmns-id;Identifier"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -3127,9 +3096,8 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<cmns-av:adaptedFrom>ISO/TS 20443:2017(E) Health informatics - Identification of medicinal products (IDMP) - Implementation guidelines for ISO 11615 data elements and structures for the unique identification and exchange of regulated medicinal product information, table D.1, clause D.2.1</cmns-av:adaptedFrom>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO20443-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary denoting an ingredient role, according to the ISO 20443 implementation guide for ISO 11615</cmns-dsg:hasDescription>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>ISO 11615 Ingredient Role vocabulary</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11615-MedicinalProducts/ISO11615-IngredientRoleVocabulary</mvf:hasURI>
+		<cmns-dsg:hasTextualName>ISO 11615 Ingredient Role vocabulary</cmns-dsg:hasTextualName>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11615-MedicinalProducts/ISO11615-IngredientRoleVocabulary</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;ISO19844-CodeSet">
@@ -3221,7 +3189,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&idmp-o;hasLanguageCode"/>
-				<owl:onClass rdf:resource="&lcc-lr;LanguageIdentifier"/>
+				<owl:onClass rdf:resource="&cmns-id;Identifier"/>
 				<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -3382,7 +3350,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&idmp-o;hasLanguageCode"/>
-				<owl:onClass rdf:resource="&lcc-lr;LanguageIdentifier"/>
+				<owl:onClass rdf:resource="&cmns-id;Identifier"/>
 				<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -3498,7 +3466,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<rdfs:subClassOf rdf:resource="&cmns-doc;Document"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&mvf-trm;depicts"/>
+				<owl:onProperty rdf:resource="&cmns-dsg;describes"/>
 				<owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -3918,10 +3886,9 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<skos:definition>controlled vocabulary representing the enumeration for integrity check algorithms as specified in ISO 21090</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO21090-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary representing the enumeration for integrity check algorithms as specified in ISO 21090</cmns-dsg:hasDescription>
+		<cmns-dsg:hasTextualName>Integrity Check Algorithm Enumeration</cmns-dsg:hasTextualName>
 		<cmns-id:isIdentifiedBy rdf:resource="&idmp-o;OID-2.16.840.1.113883.5.1010"/>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>Integrity Check Algorithm Enumeration</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/IntegrityCheckAlgorithmEnumeration</mvf:hasURI>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/IntegrityCheckAlgorithmEnumeration</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:Class rdf:about="&idmp-o;IntendedEffect">
@@ -4228,7 +4195,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		<rdfs:subClassOf rdf:resource="&idmp-o;MarketingAuthorization"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&mvf-trm;extends"/>
+				<owl:onProperty rdf:resource="&cmns-doc;refersTo"/>
 				<owl:onClass rdf:resource="&idmp-o;MarketingAuthorization"/>
 				<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
 			</owl:Restriction>
@@ -4618,7 +4585,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&mvf-trm;hasExtension"/>
+				<owl:onProperty rdf:resource="&cmns-doc;isReferredToBy"/>
 				<owl:onClass rdf:resource="&idmp-o;JurisdictionalMarketingAuthorization"/>
 				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
 			</owl:Restriction>
@@ -5312,7 +5279,7 @@ d) the assignment of a unique medicinal product batch identifier (BAID2) to reli
 	</owl:Class>
 	
 	<owl:Class rdf:about="&idmp-o;MedicalDeviceNomenclature">
-		<rdfs:subClassOf rdf:resource="&mvf-tsc;Nomenclature"/>
+		<rdfs:subClassOf rdf:resource="&cmns-col;StructuredCollection"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-doc;isReferredToBy"/>
@@ -5896,13 +5863,6 @@ g) therapeutic indication(s) as authorized for the medicinal product.</skos:note
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-rga;hasReach"/>
 				<owl:onClass rdf:resource="&cmns-loc;GeographicRegion"/>
-				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-			</owl:Restriction>
-		</rdfs:subClassOf>
-		<rdfs:subClassOf>
-			<owl:Restriction>
-				<owl:onProperty rdf:resource="&mvf;hasLanguage"/>
-				<owl:onClass rdf:resource="&lcc-lr;Language"/>
 				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -6590,7 +6550,6 @@ A module should be designed to reflect these principles, including a small numbe
 	
 	<owl:Class rdf:about="&idmp-o;MolecularGraph">
 		<rdfs:subClassOf rdf:resource="&idmp-o;StructuralRepresentation"/>
-		<rdfs:subClassOf rdf:resource="&mvf-trm;Diagram"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&idmp-o;hasRendering"/>
@@ -7366,10 +7325,9 @@ For the description of nucleic acids, the following information can be used to a
 		<skos:definition>controlled vocabulary representing the enumeration for null flavor codes as specified in ISO 21090</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO21090-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary representing the enumeration for null flavor codes as specified in ISO 21090</cmns-dsg:hasDescription>
+		<cmns-dsg:hasTextualName>Null Flavor Enumeration</cmns-dsg:hasTextualName>
 		<cmns-id:isIdentifiedBy rdf:resource="&idmp-o;OID-2.16.840.1.113883.5.1008"/>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>Null Flavor Enumeration</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/NullFlavorEnumeration</mvf:hasURI>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/NullFlavorEnumeration</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="&idmp-o;OID-2.16.840.1.113883.5.1008">
@@ -8198,7 +8156,7 @@ For the description of nucleic acids, the following information can be used to a
 	</owl:Class>
 	
 	<owl:Class rdf:about="&idmp-o;OtherProductCharacteristic">
-		<rdfs:subClassOf rdf:resource="&mvf-trm;NonEssentialCharacteristic"/>
+		<rdfs:subClassOf rdf:resource="&cmns-cls;Aspect"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-dsg;describes"/>
@@ -8723,7 +8681,7 @@ For the description of nucleic acids, the following information can be used to a
 	</owl:Class>
 	
 	<owl:Class rdf:about="&idmp-o;PharmaceuticalProductCharacteristic">
-		<rdfs:subClassOf rdf:resource="&mvf-trm;EssentialCharacteristic"/>
+		<rdfs:subClassOf rdf:resource="&cmns-cls;Aspect"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-dsg;describes"/>
@@ -12538,7 +12496,7 @@ For the description of nucleic acids, the following information can be used to a
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&idmp-o;hasLanguageCode"/>
-				<owl:someValuesFrom rdf:resource="&lcc-lr;LanguageIdentifier"/>
+				<owl:someValuesFrom rdf:resource="&cmns-id;Identifier"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -13471,7 +13429,6 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 	
 	<owl:Class rdf:about="&idmp-o;Taxonomy">
 		<rdfs:subClassOf rdf:resource="&cmns-cls;ClassificationScheme"/>
-		<rdfs:subClassOf rdf:resource="&mvf-tsc;Nomenclature"/>
 		<rdfs:label>taxonomy</rdfs:label>
 		<dct:source>ISO/TS 19844:2018(E) Health informatics - Identification of medicinal products (IDMP) - Implementation guidelines for ISO 11238 for data elements and structures for the unique identification and exchange of regulated information on substances, clause 6.9.13</dct:source>
 		<rdfs:seeAlso rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17469"/>
@@ -14027,10 +13984,9 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 		<skos:definition>controlled vocabulary representing the enumeration for update mode codes as specified in ISO 21090</skos:definition>
 		<cmns-col:isConstituentOf rdf:resource="&idmp-o;ISO21090-CodeSet"/>
 		<cmns-dsg:hasDescription>controlled vocabulary representing the enumeration for update mode codes as specified in ISO 21090</cmns-dsg:hasDescription>
+		<cmns-dsg:hasTextualName>Update Mode Enumeration</cmns-dsg:hasTextualName>
 		<cmns-id:isIdentifiedBy rdf:resource="&idmp-o;OID-2.16.840.1.113883.5.57"/>
-		<mvf:hasLanguage rdf:resource="&lcc-639-1;English"/>
-		<mvf:hasTextualName>Update Mode Enumeration</mvf:hasTextualName>
-		<mvf:hasURI rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/UpdateModeEnumeration</mvf:hasURI>
+		<cmns-org:hasURL rdf:datatype="&xsd;anyURI">https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO21090-HarmonizedDatatypes/UpdateModeEnumeration</cmns-org:hasURL>
 	</owl:NamedIndividual>
 	
 	<owl:Class rdf:about="&idmp-o;ValueDomain">
@@ -15206,7 +15162,7 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 		<rdfs:subPropertyOf rdf:resource="&cmns-doc;refersTo"/>
 		<rdfs:label>has language code</rdfs:label>
 		<dct:source>ISO 11240:2021, clause 7.4.6.3.2</dct:source>
-		<rdfs:range rdf:resource="&lcc-lr;LanguageIdentifier"/>
+		<rdfs:range rdf:resource="&cmns-id;Identifier"/>
 		<skos:definition>indicates the human language of the content</skos:definition>
 		<skos:note>Valid codes are taken from the IETF RFC 3066. If this attribute is null, the language may be inferred from elsewhere, either from the context or from unicode language tags, for example. Conformance profiles should define defaulting rules for language for a given usage environment of this International Standard. While language tags usually alter the meaning of the text, the language does not alter the meaning of the characters in the text.</skos:note>
 		<idmp-o:isEncodedAs rdf:resource="&idmp-o;DatatypeCode-CD"/>
@@ -16184,7 +16140,7 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 	</owl:ObjectProperty>
 	
 	<owl:DatatypeProperty rdf:about="&idmp-o;hasReferenceSourceURL">
-		<rdfs:subPropertyOf rdf:resource="&mvf;hasURI"/>
+		<rdfs:subPropertyOf rdf:resource="&cmns-org;hasURL"/>
 		<rdfs:label>has reference source URL</rdfs:label>
 		<rdfs:domain rdf:resource="&idmp-o;ReferenceSource"/>
 		<rdfs:range rdf:resource="&xsd;anyURI"/>
@@ -16223,7 +16179,7 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 	</owl:ObjectProperty>
 	
 	<owl:DatatypeProperty rdf:about="&idmp-o;hasReferenceURL">
-		<rdfs:subPropertyOf rdf:resource="&mvf;hasURI"/>
+		<rdfs:subPropertyOf rdf:resource="&cmns-org;hasURL"/>
 		<rdfs:label>has reference URL</rdfs:label>
 		<dct:source>ISO 21090:2011 Health informatics - Harmonized data types for information interchange, clause 7.4.2.3.4</dct:source>
 		<rdfs:range rdf:resource="&xsd;anyURI"/>
@@ -16711,7 +16667,7 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 	</owl:ObjectProperty>
 	
 	<owl:DatatypeProperty rdf:about="&idmp-o;hasSubstanceNameValue">
-		<rdfs:subPropertyOf rdf:resource="&mvf;hasTextualName"/>
+		<rdfs:subPropertyOf rdf:resource="&cmns-dsg;hasTextualName"/>
 		<rdfs:label>has substance name value</rdfs:label>
 		<dct:source>ISO 11238:2018 Health informatics - Identification of medicinal products (IDMP) - Data elements and structures for the unique identification and exchange of regulated information on substances, clause 6.4</dct:source>
 		<dct:source>ISO/TS 19844:2018(E) Health informatics - Identification of medicinal products (IDMP) - Implementation guidelines for ISO 11238 for data elements and structures for the unique identification and exchange of regulated information on substances, clause 6.3.1</dct:source>
@@ -17836,22 +17792,6 @@ In all these cases, a new ID shall be issued, that is, &apos;Human Albumin, Plas
 	<owl:DatatypeProperty rdf:about="&cmns-txt;hasTextValue">
 		<idmp-o:isEncodedAs rdf:resource="&idmp-o;DatatypeCode-ST"/>
 	</owl:DatatypeProperty>
-	
-	<owl:Class rdf:about="&lcc-lr;LanguageVariation">
-		<rdfs:subClassOf rdf:resource="&idmp-o;Process"/>
-	</owl:Class>
-	
-	<owl:Class rdf:about="&lcc-lr;Transcription">
-		<rdfs:subClassOf rdf:resource="&idmp-o;Process"/>
-	</owl:Class>
-	
-	<owl:Class rdf:about="&lcc-lr;Transliteration">
-		<rdfs:subClassOf rdf:resource="&idmp-o;Process"/>
-	</owl:Class>
-	
-	<owl:Class rdf:about="&mvf-tsc;TerminologyWork">
-		<rdfs:subClassOf rdf:resource="&idmp-o;Process"/>
-	</owl:Class>
 	
 	<owl:Axiom>
 		<owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
